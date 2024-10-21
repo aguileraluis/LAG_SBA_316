@@ -1,0 +1,42 @@
+
+.topBar {
+  display: flex; 
+  flex-direction: center;
+  justify-content: center;
+  background-color: #0D3B66;
+  padding: 1%; 
+}
+
+.topBar h1 {
+  font-size: 25px;
+  color:   #fcedb4;
+}
+
+#topLink {
+  color:#F4D35E;
+}
+
+#navigation {
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ padding-left: 2%;
+ padding-right: 2%;
+}
+
+#logo-img {
+  width: 50%; 
+  height: 50%; 
+  padding: 0;
+  margin: 0;
+}
+
+.infoBox {
+  width: 50%; 
+  height: 100%; 
+  background-color: #0D3B66;
+  color: #fcedb4;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+}
