@@ -37,6 +37,6 @@
   background-color: #0D3B66;
   color: #fcedb4;
   padding: 1%;
-  display: flex;
+  display: none;
   justify-content: center;
 }
