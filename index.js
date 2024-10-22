@@ -122,7 +122,7 @@ if (category === "") {
     alert('You must provide a category name that is one word.')
     newPost.elements["postCategory"].focus();
     newPost.elements["postCategory"].style.border = "3px solid red";
-    return false;
+    return;
 } else {
   newPost.elements["postCategory"].style.border = "3px solid aqua"; 
   nums += 1; 
@@ -134,7 +134,7 @@ if (title === "") {
     alert('You must provide a title that is more than a few words.')
     newPost.elements["postTitle"].focus();
     newPost.elements["postTitle"].style.border = "3px solid red";
-    return false;
+    return;
 } else {
   newPost.elements["postTitle"].style.border = "3px solid aqua";
   nums += 1; 
@@ -146,7 +146,7 @@ if (date === "") {
     alert('You must provide a date that is in the mm/dd/yyyy format')
     newPost.elements["postDate"].focus();
     newPost.elements["postDate"].style.border = "3px solid red";
-    return false;
+    return;
 } else {
   newPost.elements["postDate"].style.border = "3px solid aqua";
   nums += 1; 
@@ -158,7 +158,7 @@ if (description === "") {
     alert('You must provide a description that is more than a few words.')
     newPost.elements["postDescription"].focus();
     newPost.elements["postDescription"].style.border = "3px solid red";
-    return false;
+    return;
 } else {
   newPost.elements["postDescription"].style.border = "3px solid aqua";
   nums += 1; 
@@ -168,7 +168,7 @@ if (image.files.length === 0) {
   alert('Please select an image that is of image format.'); 
   newPost.elements["postImage"].focus(); 
   newPost.elements["postImage"].style.border = "3px solid red";
-  return false;
+  return;
 
 } else {
   newPost.elements["postImage"].style.border = "3px solid aqua";
@@ -179,17 +179,17 @@ if (!dateTest.test(date)){
   alert("Please provide date format in mm/dd/yyyy."); 
   newPost.elements["postDate"].focus(); 
   newPost.elements["postDate"].style.border = "3px solid red";
-  return false;
+  return;
 } else {
   newPost.elements["postDate"].style.border = "3px solid aqua";
   nums += 1; 
 }
 
 if (!categoryTest.test(category)){
-  alert("Please provide a category that is only one word."); 
+  alert("Please provide a category that is only one word and has no spaces."); 
   newPost.elements["postCategory"].focus(); 
   newPost.elements["postCategory"].style.border = "3px solid red";
-  return false;
+  return;
 } else {
   newPost.elements["postCategory"].style.border = "3px solid aqua";
   nums += 1; 
@@ -199,7 +199,7 @@ if (!titleTest.test(title)){
   alert("Please provide a title that is more than one word."); 
   newPost.elements["postTitle"].focus(); 
   newPost.elements["postTitle"].style.border = "3px solid red";
-  return false;
+  return;
 } else {
   newPost.elements["postTitle"].style.border = "3px solid aqua";
   nums += 1; 
@@ -287,11 +287,9 @@ if (!titleTest.test(title)){
     id: postItems.length, cat: category, title: title, date: date, text: description, image: image
   }); 
 
-  if (nums === success) {
+ 
     alert('Congratulations! Your blog past has been added successfully.')
-
-    newPost.reset(); 
-  }
+  newPost.reset(); 
 
 }
 
@@ -309,7 +307,7 @@ function handleDelete(e) {
   setTimeout(function () {
     infoMessage.style.display = "none";
     infoMessage.innerHTML = "";
-  }, 5000);
+  }, 9000);
 
 }; 
 
