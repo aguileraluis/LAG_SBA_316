@@ -74,7 +74,7 @@
 <br/>
 <br/>
 <br/>
-<div id="categories" class="d-flex gap-2 justify-content-center py-5 mb-5 mt-5">
+<div class="categories d-flex gap-2 justify-content-center py-5 mb-5 mt-5">
   <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">Technologies</span>
   <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">Soft Skills</span>
   <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">The Long Nights</span>
@@ -84,67 +84,7 @@
   <div class="container text-center infoBox"></div>
   <br/>
     <div id="allPosts" class="row d-flex justify-content-center mb-5">
-    
-      <div class="post col-md-2">
-        <div class="row g-0 border rounded overflow-hidden justify-content-center mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-body-secondary">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-              Continue reading
-            </a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-           <img style="height: 100%; width: 100%;" src="https://external-preview.redd.it/thousands-of-software-engineers-say-the-job-market-is-v0-eP2MZxL4cKYAAjjdzstSUogHjgcTd6lr9CSlqLaOGWA.jpg?auto=webp&s=82e31c88b189e6423cdf1b4171a8bdb61314dc7a"/>
-          </div>
-        </div>
-        <button class="btn" style="background-color: #0D3B66; color: #FAF0CA" type="submit">Remove Post</button>
-      </div>
-      <div class="post col-md-2">
-        <div class="row g-0 border rounded overflow-hidden justify-content-center mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-            <h3 class="mb-0">Post title</h3>
-            <div class="mb-1 text-body-secondary">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-              Continue reading
-            </a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-         <img style="width: 100%; height: 100%;" src="https://eranstiller.com/wp-content/uploads/2023/09/Software-Engineer-Skills-Problem-Solving.png" alt="girl coding at night">
-          </div>
-          
-        </div>
-        <button class="btn" style="background-color: #0D3B66; color: #FAF0CA" type="submit">Remove Post</button>
-      </div>
-      <div class="post col-md-2">
-        <div class="row g-0 border rounded overflow-hidden justify-content-center mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-            <h3 class="mb-0">Post title</h3>
-            <div class="mb-1 text-body-secondary">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-              Continue reading
-            </a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-           <img style="width: 100%; height: 100%; padding-top: 10px;" src="https://www.logic-fruit.com/wp-content/uploads/2023/01/SDLC-Thumbnail-1024x538.jpg.webp" alt=""
-           name="file">
-          </div>
-          
-        </div>
-
-        <button class="btn" style="background-color: #0D3B66; color: #FAF0CA" type="submit">Remove Post</button>
-      </div>
-    </div>
-   
-
-      
-      
+  </div>
       <div style="border: 10px solid #EE964B;" class="container py-3 p-3 mb-5 mt-5">
         <div class="container py-5 text-center">
           <h2 class="display-5 link-body-emphasis mb-1">Create a new blog post.</h2>
@@ -153,56 +93,43 @@
           <div class="form-row">
             <div  class="form-group col-md-6">
               <label  for="inputEmail4">Category Name</label>
-              <input style="border: 5px solid #0D3B66;" type="text" class="form-control" placeholder="Category Name"
-              name="postCategory">
+              <input style="border: 5px solid #0D3B66;" type="text" class="form-control" placeholder="Please enter a category that is one word."
+              name="postCategory"a-z."
+              required>
             </div>
           </div>
           <div class="form-group">
             <label for="inputTitle">Post Title</label>
-            <input style="border: 5px solid #0D3B66;" type="text" class="form-control"  placeholder="Title"
-            name="postTitle">
+            <input style="border: 5px solid #0D3B66;" type="text" class="form-control"  placeholder="Please enter a title in a few words."
+            name="postTitle"
+            required>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">Date</label>
-              <input  style="border: 5px solid#0D3B66;" type="text" class="form-control" 
-              name="postDate">
+              <input  style="border: 5px solid#0D3B66;" type="text"
+              placeholder="Please enter a date in the format of (mm/dd/yyyy)." class="form-control" 
+              name="postDate"
+              required>
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">Description</label>
-              <input  style="border: 5px solid #0D3B66;" type="text" class="form-control" name="postDescription">
+              <input  style="border: 5px solid #0D3B66;"
+              placeholder="Please enter a description that is a few words."
+              type="text" class="form-control" name="postDescription"
+              required>
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Image</label>
               <input  style="border: 5px solid #0D3B66;" type="file" class="form-control" name="postImage"
-              accept="image/*">
+              accept="image/*"
+              required>
             </div>
           </div>
           <br/>
           <button id="submitBtn" class="btn" style="background-color: #0D3B66; color: #FAF0CA" type="submit">Add Post</button>
         </form>
       </div>
-
-   
-
-   
-    
-    <!-- <div class="container py-4 pt-5 mb-5">
-      <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*lR7-gHJ1jgO_vqJsyJDvpA.png);" class="h-100 p-5 text-bg-dark rounded-3">         
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-            <h1>About</h1>
-            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-            <button style="background-color: #0D3B66; color: #FAF0CA;" type="button" class="btn btn-lg px-4 me-sm-3">Explore More</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="container py-4 p-5">
       <div class="row g-5">
         <div class="col-md-8">
